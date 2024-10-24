@@ -1,0 +1,26 @@
+/* {
+    margin:  0;
+    padding: 0;
+}
+*/    
+
+a:link{
+    color: #818181;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #818181;
+}
+
+.body {
+    background-color:  #fff;
+}
+
+.header {
+    font-family: 'TT Commons', sans-serif;
+    font-size:xx-large;
+    font-weight: 600;
+    color: #818181;
+    padding: 20px;
+}
