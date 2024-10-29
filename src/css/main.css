@@ -5,22 +5,18 @@
 */    
 
 a:link{
-    color: #818181;
+    color: #000;
     text-decoration: none;
 }
 
 a:visited{
-    color: #818181;
+    color: #000;
 }
 
 .body {
-    background-color:  #fff;
+    background-color:  #000;
 }
 
 .header {
-    font-family: 'TT Commons', sans-serif;
-    font-size:xx-large;
-    font-weight: 600;
-    color: #818181;
-    padding: 20px;
+    color: #000;
 }

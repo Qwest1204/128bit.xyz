@@ -9,3 +9,14 @@ class Image extends React.Component {
 }
 
 export default Image
+
+export class SVG extends React.Component {
+    render() {
+        return (
+            <svg class={this.props.class} width={this.props.width} height={this.props.height} xmlns="http://www.w3.org/2000/svg">
+                
+            </svg>
+        )
+    }
+}
+
