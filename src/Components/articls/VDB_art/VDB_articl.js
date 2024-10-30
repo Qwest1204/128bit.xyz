@@ -1,7 +1,11 @@
 import React from "react";
-import Header from "../Header";
-import Futer from "../Fouter";
-import VDB_img from "./e27f706a07f4650ae521f7e6e89d9cf4.jpeg"
+import Header from "../../Header";
+import Futer from "../../Fouter";
+import VDB_img from "./img/e27f706a07f4650ae521f7e6e89d9cf4.jpeg"
+
+import MainImport from "./img/imports_code.png"
+import Setup from "./img/setup.png"
+import Connect_postgres from "./img/connect_postgres.png"
 
 class Napolnenie extends React.Component {
     render() {
@@ -26,11 +30,19 @@ class Napolnenie extends React.Component {
                     <h2 class="pb-2 border-bottom">Векторный поиск</h2>
                     <p class="lead mb-4">Эмбеддинги позволяют нам выполнять векторный поиск, поиск по сходству или семантический поиск, находя и извлекая схожие объекты в векторной базе данных. Эти процессы включают в себя поиск объектов, находящихся близко друг к другу в векторном пространстве. Точно так же, как мы можем найти схожие векторы для определенного объекта (например, собаки), мы также можем найти схожие векторы для поискового запроса. Например, чтобы найти слова, похожие на слово "Котенок", мы генерируем векторное вложение для "Котенка" и извлекаем все элементы, близкие к вектору запроса, такие как слово "Кошка". Числовое представление объектов данных дает нам возможность применять математические операции, такие как расчет расстояния между двумя векторными вложениями, для определения их сходства. Это делает векторные вложения мощным инструментом для поиска и сравнения объектов данных на основе их семантического значения.</p>
                     <h2 class="pb-2 border-bottom">А теперь практика</h2>
-                    <pre><code>import React from "react";<br/> 
-                        import HomePage from "./Home_page";<br/>
-                        import ListProject from "./list_project";<br/>
-                        import VDB from "./Components/articls/VDB_articl"<br/>
-                    </code></pre>
+                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <img src={Setup} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <img src={Connect_postgres} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+
                 </div>
             </div>
         )

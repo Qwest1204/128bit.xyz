@@ -1,7 +1,7 @@
 import React from "react"
 import HomePage from "./Home_page";
 import ListProject from "./list_project";
-import VDB from "./Components/articls/VDB_articl"
+import VDB from "./Components/articls/VDB_art/VDB_articl"
 
 import First_art from "./Components/articls/First_articl"
 
