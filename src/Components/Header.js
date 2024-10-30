@@ -9,7 +9,8 @@ class Header extends React.Component {
         <div class="container">
             <header class="d-flex justify-content-center py-3">
               <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 link-body-emphasis">Проекты и статьи</a></li>
+                <li><a href="https://github.com/Qwest1204" class="nav-link px-2 link-body-emphasis">Github</a></li>
               </ul>
             </header>
           </div>
