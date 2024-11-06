@@ -3,9 +3,12 @@ import Header from "../../Header";
 import Futer from "../../Fouter";
 import VDB_img from "./img/e27f706a07f4650ae521f7e6e89d9cf4.jpeg"
 
-import MainImport from "./img/imports_code.png"
-import Setup from "./img/setup.png"
-import Connect_postgres from "./img/connect_postgres.png"
+
+import Install from "./img/install.png"
+import Client from "./img/client.png"
+import Collection from "./img/collection.png"
+import Add from "./img/add.png"
+import Ques from "./img/ques.png"
 
 class Napolnenie extends React.Component {
     render() {
@@ -30,20 +33,19 @@ class Napolnenie extends React.Component {
                     <h2 class="pb-2 border-bottom">Векторный поиск</h2>
                     <p class="lead mb-4">Эмбеддинги позволяют нам выполнять векторный поиск, поиск по сходству или семантический поиск, находя и извлекая схожие объекты в векторной базе данных. Эти процессы включают в себя поиск объектов, находящихся близко друг к другу в векторном пространстве. Точно так же, как мы можем найти схожие векторы для определенного объекта (например, собаки), мы также можем найти схожие векторы для поискового запроса. Например, чтобы найти слова, похожие на слово "Котенок", мы генерируем векторное вложение для "Котенка" и извлекаем все элементы, близкие к вектору запроса, такие как слово "Кошка". Числовое представление объектов данных дает нам возможность применять математические операции, такие как расчет расстояния между двумя векторными вложениями, для определения их сходства. Это делает векторные вложения мощным инструментом для поиска и сравнения объектов данных на основе их семантического значения.</p>
                     <h2 class="pb-2 border-bottom">А теперь практика</h2>
-                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-                    <img src={Setup} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-                    <img src={Connect_postgres} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-                    <img src={MainImport} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
-
-                </div>
+                    <p class="lead mb-4">В туторе я буду использовать chromaDB так как она open source и на мой взгляд самая быстро развивающаяся и язык Python - кудаж без него</p>
+                    <p class="lead mb-4">Начнём с установки</p>
+                    <img src={Install} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="400" height="500" loading="lazy"></img>
+                    <p class="lead mb-4">Теперь нам нужно создать клиент который будет подключаться к БД и управлять ею</p>
+                    <img src={Client} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <p class="lead mb-4">Создадим коллекцию где будут храниться Эмбеддинги и данные. И ещё важный момент я использую метод get_or_create_collection за место create_collection т. к. это удобние, фактически они не отличаются но в первом случае есть возможность подключения к уже существующим коллекциям</p>
+                    <img src={Collection} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <p class="lead mb-4">Теперь добавляем данные. Данные могут быть любыми: текст, изображения, файлы. Но нужно заметить что chromaDB данные не хранит! т. е. если вы загрузили фото то храняться только Эмбеддинги и метаданные, файлы нужно хранить отдельно</p>
+                    <img src={Add} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <p class="lead mb-4">Запросим данные из коллекции и нам вернёться n самых похожих записей</p>
+                    <img src={Ques} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"></img>
+                    <p class="lead mb-4">Ну вот и всё! Как видите векторные БД не такие и сложные. Продвинутый код находятся на  <a href="https://github.com/Qwest1204/image_search_engine">гите</a> если кому нужно)</p>
+                    </div>
             </div>
         )
     }
